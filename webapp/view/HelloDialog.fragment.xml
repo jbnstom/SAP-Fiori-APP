@@ -1,0 +1,11 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+    <!--Ejercicio 7 (continuación)-->
+    <Dialog id="helloDialog" title="{/recipient/name}">
+    <Text text="Hello from {city>/name}"/>
+        <beginButton>
+            <Button type="Reject" icon="sap-icon://decline" text="Close" press="onCloseDialog"/>
+        </beginButton>
+    </Dialog>
+</core:FragmentDefinition>

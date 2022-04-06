@@ -1,0 +1,53 @@
+<mvc:View controllerName="project1.controller.View1Column"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+
+    <headerContent>
+        <Button class="sapUiResponsiveMargin" icon="sap-icon://document-text" text="Documentación" press="onNavigateToDocu" type="Accept" />
+    </headerContent>     
+    <VBox class="sapUiSmallMargin" items="{city>/name}">
+		<f:Form id="FormChange354"
+			editable="true" >
+			<f:title>
+				<core:Title text="City info" />
+			</f:title>
+			<f:layout>
+				<f:ResponsiveGridLayout
+					labelSpanXL="3"
+					labelSpanL="3"
+					labelSpanM="3"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="4"
+					emptySpanL="4"
+					emptySpanM="4"
+					emptySpanS="0"
+					columnsXL="1"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false" />
+			</f:layout>
+			<f:formContainers >
+				<f:FormContainer >
+					<f:formElements>
+						<f:FormElement label="Name">
+							<f:fields>
+								<Text text="{city>name}" id="name"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Population">
+							<f:fields>
+								<Text text="{city>population}"/>
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+	</VBox>
+    
+</mvc:View>

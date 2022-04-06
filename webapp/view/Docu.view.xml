@@ -1,0 +1,104 @@
+<mvc:View
+    controllerName="project1.controller.Docu"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+
+    <Page id="pageDocu" title="Documentación curso" >
+        <Panel>            
+            <Button icon="sap-icon://sys-back-2" text="Back" press="onPressButtonBack" type="Emphasized" />                  
+        </Panel>
+        <content >
+            <Label text="Ejercicio 1" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-	Creación de botón + acción aparece Message Toast o alerta al presionarlo"/>
+            <ToolbarSpacer />
+            
+            <Label text="Ejercicio 2" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-	Creación input + incluimos JsonModel"/><ToolbarSpacer/>
+            
+
+            <Label text="Ejercicio 3" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-   Cogemos el campo input e imprimimos su valor en el message toast al presionar el botón"/>
+            <ToolbarSpacer />
+
+            <Label text="Ejercicio 4" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-   Creación de panel"/>
+            <ToolbarSpacer />
+
+            <Label text="Ejercicio 5" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-   Utilizamos clases predefinidas de SAP para poner márgenes en nuestra aplicación"/>
+            <ToolbarSpacer />
+
+            <Label text="Ejercicio 6" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-   Creación app.view+botón que redirige a vista1"/>
+            <ToolbarSpacer />
+            <Text text="-   Creación en el manifest de una ruta y un target nuevos para App"/>
+            <ToolbarSpacer />
+            <Text text="-   En App.controller hemos creado una función que nos redirige a la view1.view"/>
+            <ToolbarSpacer />
+
+            <Label text="Ejercicio 7" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-   Creación de un fragmento que se ejecuta al pulsar el nuevo botón “onOpenDialog”. El fragmento es: HelloDialog.Fragment"/>
+            <ToolbarSpacer />
+            <Text text="-   Dentro del fragmento, llamamos a la función para cerrarlo al pulsar el botón “close”."/>
+            <ToolbarSpacer />
+            <Text text="-    Aprovechamos para añadir algún icono y cambiar el color del botón con Type."/>
+            <ToolbarSpacer />
+
+            <Label text="Ejercicio 8" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-   Creación de un json, que se llama cities.json (en model)"/>
+            <ToolbarSpacer />
+            <Text text="-   En la view1.view añadimos una lista, y en ella incluimos los datos que hemos almacenado en el json"/>
+            <ToolbarSpacer />
+            <Text text="-   Añadimos un combobox, donde le bindeamos los datos del modelo JSON y le añadimos un dialog."/>
+            <ToolbarSpacer />
+
+            <Label text="Ejercicio 9" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-   Creación de un formatter.js. Ahí dentro, creamos una función para la modificación de los valores de población."/>
+            <ToolbarSpacer />
+            <Text text="-    En view1.view cambiamos los valores para que haga uso del formatter."/>
+            <ToolbarSpacer />
+            <Text text="-    En view1.controller, definimos el uso de formatter."/>
+            <ToolbarSpacer />
+
+
+            <Label text="Ejercicio 10" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-   Creación de un filtro con las ciudades que tenemos del json. Creamos un headerToolbar en View1, que contiene el cajetín de búsqueda y para realizar el filtro, nos hemos ido a view1.controller. Aquí hemos declarado Filter y FilterOperator, y hemos creado su correspondiente función."/>
+            <ToolbarSpacer />
+
+            <Label text="Ejercicio 11" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-   Creación de una nueva vista view2.view. Aquí añadiremos dos tablas (cogiendo un ejemplo de la web de sapui5) y le añadiremos los valores que tenemos en cities.json."/>
+            <ToolbarSpacer />
+            <Text text="-   La primera tabla, será una tabla sencilla."/>
+            <ToolbarSpacer />
+            <Text text="-   La segunda tabla llevará checkboxes."/>
+            <ToolbarSpacer />
+
+            <Label text="Ejercicio 12" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-   En la vista2, vamos a añadir iconTabBar (una barra de navegación). Así pasaremos las dos tablas de antes a cada una de las pestañas."/>
+            <ToolbarSpacer />
+
+            <Label text="Ejercicio 13" design="Bold" class="sapUiResponsiveMargin"/>
+            <ToolbarSpacer />
+            <Text text="-   En la view1.view a “objectListItem” le vamos a añadir un press + función, donde al presionar una de las celdas, nos redigirá a “view1Column.view” (crear ruta y target en manifest, y su correspondiente controlador)."/>
+            <ToolbarSpacer />
+            <Text text="-   Aprovecharemos para añadir un formulario con sus correspondientes “labels” a esta nueva vista, donde nos muestra información de la ciudad seleccionada."/>
+            <ToolbarSpacer />
+            <ToolbarSpacer />
+
+        </content>
+        
+    </Page>
+</mvc:View>

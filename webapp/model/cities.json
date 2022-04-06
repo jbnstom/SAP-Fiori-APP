@@ -1,0 +1,32 @@
+{
+    "Cities":[
+    {
+        "name": "Madrid",
+        "population" : 0.5
+    },
+    {
+        "name": "París",
+        "population" : 1.2
+    },
+    {
+        "name": "Atenas",
+        "population" : 0.5
+    },
+    {
+        "name": "Tokio",
+        "population" : 6.8
+    },
+    {
+        "name": "Londres",
+        "population" : 4.5
+    },
+    {
+        "name": "Berlín",
+        "population" : 1.3
+    },
+    {
+        "name": "Roma",
+        "population" : 3.2
+    }
+]
+}

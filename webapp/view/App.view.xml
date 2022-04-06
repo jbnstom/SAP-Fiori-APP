@@ -1,0 +1,22 @@
+<mvc:View
+    controllerName="project1.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form">
+
+     <Shell id="shell">
+        <App id="app">
+        <Page title="App View">
+            <content >            
+                <!--Ejercicio 6-->
+                <Panel>
+                    <FlexBox height="100px"	alignItems="Center" justifyContent="Center">
+                        <Button class="sapUiResponsiveMargin" text="Bienvenidos a SAP Fiori" press="onNavigateTo" type="Emphasized"/>
+                    </FlexBox>        
+                </Panel>
+            </content>
+        </Page>
+        </App>
+    </Shell>
+</mvc:View>

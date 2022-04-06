@@ -1,0 +1,108 @@
+<mvc:View controllerName="project1.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:table="sap.ui.table">
+
+    <Page id="page2" title="Tutorial SAP Fiori">
+    <headerContent>
+        <Button class="sapUiResponsiveMargin" icon="sap-icon://document-text" text="Documentación" press="onNavigateToDocu" type="Accept" />
+    </headerContent>  
+    
+    <!--Ejercicio 12-->
+    <IconTabBar expandable="false" >
+        <items>
+            <IconTabFilter text="Table" key="tabla1">
+                <Table id="idTable" inset="false" items="{city>/Cities}">
+                    <columns>
+                        <Column width="12em">
+                        <Text text="Cities" />
+                        </Column>
+                        <Column width="12em">
+                        <Text text="Population" />
+                        </Column>
+                    </columns>
+                    <items>
+                    <ColumnListItem vAlign="Middle">
+                        <cells>
+                            <Text text="{city>name}"/>
+                            <Text text="{path:'city>population', formatter:'formatter.formatPopulation'}"/>
+                        </cells>
+                    </ColumnListItem>
+                    </items>
+                    </Table>
+            </IconTabFilter>
+            <IconTabFilter text="table:Table" key="tabla">
+                <table:Table rows="{city>/Cities}">
+                    <table:columns>
+                        <table:Column id="name" filterProperty="">
+                            <Label text="{i18n>cityName}"></Label>
+                                <table:template>
+                                    <Text text="{city>name}" wrapping="false"></Text>
+                                    </table:template>
+                                </table:Column>
+                                <table:Column id="population" filterProperty="">
+                                    <Label text="{i18n>population}"></Label>
+                                    <table:template>
+                                        <Text text="{path: 'city>population', formatter: '.formatter.formatPopulation'}" wrapping="false"></Text>
+                                    </table:template>
+                                </table:Column>
+                            </table:columns>
+                        </table:Table>
+            </IconTabFilter>
+        </items>
+    </IconTabBar> 
+
+    <!--Ejercicio 11-->
+    <!-- <Page id="page2" title="{i18n>title}">
+        <content>
+            <Table id="idTable" inset="false" items="{city>/Cities}">
+            <columns>
+                <Column width="12em">
+                <Text text="Cities" />
+                </Column>
+                <Column width="12em">
+                <Text text="Population" />
+                </Column>
+            </columns>
+            <items>
+            <ColumnListItem vAlign="Middle">
+                <cells>
+                    <Text text="{city>name}"/>
+                    <Text text="{path:'city>population', formatter:'formatter.formatPopulation'}"/>
+                </cells>
+            </ColumnListItem>
+            </items>
+            </Table>
+        </content>
+    </Page> -->
+
+    <!-- <Page id="page" title="{i18n>title}">
+    <table:Table rows="{city>/Cities}">
+        <table:columns>
+            <table:Column id="name" filterProperty="">
+                <Label text="{i18n>cityName}"></Label>
+                    <table:template>
+                        <Text text="{city>name}" wrapping="false"></Text>
+                        </table:template>
+                    </table:Column>
+                    <table:Column id="population" filterProperty="">
+                        <Label text="{i18n>population}"></Label>
+                        <table:template>
+                            <Text text="{path: 'city>population', formatter: '.formatter.formatPopulation'}" wrapping="false"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+            </table:Table>
+    </Page> -->
+        
+    </Page>
+    <footer>
+        <Panel>
+            <FlexBox height="100px"	alignItems="Start" justifyContent="Start">
+                <Button icon="sap-icon://sys-back-2" text="Back" press="onPressButtonBack" type="Emphasized" />
+            </FlexBox>        
+        </Panel>
+    </footer>
+</mvc:View>
